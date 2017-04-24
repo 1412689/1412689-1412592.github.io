@@ -2,7 +2,7 @@
 
 ## Thông tin nhóm
 
-|   MSSV  |        Họ Tên      | Nội Dung Đóng Góp | Đánh Giá |
+**|   MSSV  |        Họ Tên      | Nội Dung Đóng Góp | Đánh Giá |**
 | :--------- | :-------------------- | :------------------- | :---------- |
 | 1412689 | Hoàng Thị Bích Vân |                   |          |
 | 1412592 | Võ Hiếu Trung      |                   |          |
@@ -125,7 +125,7 @@ Session giúp giải quyết vấn đề phân biện giữa các trình duyệt
 
 Phân biệt session với cookie:
 
-|                 Session                          |                    Cookie                  |
+**|                 Session                          |                    Cookie                  |**
 | :-------------------------------------------------- | :-------------------------------------------- |
 |- Được lưu trữ ở server                           |-Được lưu trữ trên trình duyệt (máy tính)   |
 |- Khi đã đăng nhập vào một trang web và mở tab mới trên trình duyệt thì không cần đăng nhập lại lần nữa, phiên làm việc sẽ kết thúc khi ta tắt trình duyệt đi. Và khi mở trình duyệt lên lại vào lại web đó thì ta lại phải đăng nhập lại.|- Còn với cookie thì chỉ cần đăng nhập một lần và dùng cookie lưu thông tin đăng nhập thì lần sau bạn bạn mở trang web đó nó sẽ tự động đăng nhập mà mình không cần thao tác đăng nhập lại.|
