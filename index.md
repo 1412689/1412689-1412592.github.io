@@ -1,13 +1,13 @@
 # ĐỀ TÀI TÌM HIỂU Backend - Play(Scala)
 
-##I. Thông tin nhóm
+## Thông tin nhóm
 |   MSSV  |        Họ Tên      | Nội Dung Đóng Góp | Đánh Giá |
 |---------|--------------------|-------------------|----------|
 | 1412689 | Hoàng Thị Bích Vân |                   |          |
 | 1412592 | Võ Hiếu Trung      |                   |          |
 
-##II. Sơ lược công nghệ hiện nay về Backend
-###1. Kiến trúc MVC – Model-View-Controller
+## Sơ lược công nghệ hiện nay về Backend
+### Kiến trúc MVC – Model-View-Controller
 
 Kiến trúc MVC là một kiến trúc dành cho ứng dụng web, được áp dụng rộng rãi trong nhiều ngôn ngữ và framework khác nhau. Việc áp dụng kiến trúc MVC nhằm mục tiêu phân tách rõ ràng giữa ba thành phần của hầu hết các ứng dụng web.
 
@@ -61,7 +61,7 @@ Kiến trúc MVC có rất nhiều ưu điểm:
 
 - Tái sử dụng mã nguồn (1 view có thể được sử dụng cho nhiều model).
 
-###2. Ajax – Asynchronous JavaScript and XML
+### Ajax – Asynchronous JavaScript and XML
 
 Ajax là một tập hợp các công nghệ phát triển web dành cho phía máy trạm để tạo các ứng dụng web động hay các ứng dụng giàu tính Internet (rich Internet application). Từ Ajax được ông Jesse James Garrett đưa ra và dùng lần đầu tiên vào tháng 2 năm 2005 để chỉ kỹ thuật này, mặc dù các hỗ trợ cho Ajax đã có trên các chương trình duyệt từ 10 năm trước. Với Ajax, ứng dụng web có thể gửi và nhận dữ liệu ngầm không đồng bộ từ máy chủ mà không ảnh hưởng đến trang web hiện hành. Bằng cách tách riêng thành phần dữ liệu với thành phần hiển thị, ngữ cảnh được thay đổi liên tục để thích ứng mà không cần phải tải lại toàn bộ trang web. Trong thực tế, XML thường đươc thay thế bởi JSON (sẽ nói rõ trong phần sau) bởi những thuận lợi mà JavaScript mang lại.
 
@@ -101,7 +101,7 @@ Giống như DHTML, LAMP hay SPA, Ajax tự nó không phải là một công ng
 
 - Mở ra một cách thức khác cho việc tấn công của các đoạn mã độc mà những nhà phát triển web có thể không kiểm thử hết được. [3]
 
-###3. Json web API
+### Json web API
 
 Web API là một công nghệ giúp xây dựng các dịch vụ thành phân tán, hỗ trợ cho mô hình MVC.
 
@@ -113,7 +113,7 @@ Json là một kiểu dữ liệu tuân theo quy luật nhất định, hầu h�
 
 Đây là 1 cấu trúc dữ liệu phổ dụng. Hầu như tất cả các ngôn ngữ lập trình hiện đại đều hổ trợ chúng trong 1 hình thức nào đó. Chúng tạo nên ý nghĩa của 1 định dạng hoán vị dữ liệu với các ngôn ngữ lập trình cũng đã được cơ sở hoá trên cấu trúc này. [4]
 
-###4. Session
+### Session
 
 Session là một khái niệm phổ biến trong quá trình lập trình web có kết nối với cơ sở dữ liệu database. Đặc biệt chức năng như đăng nhập, đăng xuất giúp người dùng dễ thao tác hơn. Là cách để lưu dữ liệu của người dùng khi sử dụng website. Giá trị của session sẽ được lưu vào tập tin khó nhớ và được sinh ra ngâu nhiên là session id trên máy chủ, đồng thời trên máy tính client cũng được sinh ra 1 file cookie có nội dung đúng với session id (nhằm so khớp giá trị session nào là của client nào).Có thể sử dụng session trong nhiều ngôn ngữ khác nhau.
 
@@ -137,4 +137,4 @@ Phân biệt session với cookie:
 
 Việc lựa chọn sử dụng session hay cookie phụ thuộc vào lập trình viên.
 
-##Giới thiệu về play(scala)
+## Giới thiệu về play(scala)
