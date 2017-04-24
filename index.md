@@ -1,7 +1,8 @@
 # ĐỀ TÀI TÌM HIỂU Backend - Play(Scala)
 
 ## Thông tin nhóm
-|   MSSV  |        Họ Tên      | Nội Dung Đóng Góp | Đánh Giá |
+
+<|   MSSV  |        Họ Tên      | Nội Dung Đóng Góp | Đánh Giá |
 |---------|--------------------|-------------------|----------|
 | 1412689 | Hoàng Thị Bích Vân |                   |          |
 | 1412592 | Võ Hiếu Trung      |                   |          |
@@ -26,7 +27,7 @@ Từ đó kiến trúc MVC chia ứng dụng ra ba thành phần tương ứng l
 - Thành phần hiển thị
 
 - Thành phần xử lý [1]
-
+<blockquote class="imgur-embed-pub" lang="en" data-id="iIz7mb5"><a href="//imgur.com/iIz7mb5"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 <img src="http://imgur.com/iIz7mb5">
 
 Thứ tự tác động giữa các lớp từ lúc có hành động cần xử lý từ phía người dùng cho đến lúc đáp ứng:
@@ -125,7 +126,7 @@ Session giúp giải quyết vấn đề phân biện giữa các trình duyệt
 
 Phân biệt session với cookie:
 
-|                 Session                          |                    Cookie                  |
+<|                 Session                          |                    Cookie                  |
 |--------------------------------------------------|--------------------------------------------|
 |- Được lưu trữ ở server                           |-Được lưu trữ trên trình duyệt (máy tính)   |
 |- Khi đã đăng nhập vào một trang web và mở tab    |-Còn với cookie thì chỉ cần đăng nhập một |
