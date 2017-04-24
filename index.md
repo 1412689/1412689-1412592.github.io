@@ -3,7 +3,7 @@
 ## Thông tin nhóm
 
 <|   MSSV  |        Họ Tên      | Nội Dung Đóng Góp | Đánh Giá |
-|---------|--------------------|-------------------|----------|
+| :--------- | :-------------------- | :------------------- | :---------- |
 | 1412689 | Hoàng Thị Bích Vân |                   |          |
 | 1412592 | Võ Hiếu Trung      |                   |          |
 
@@ -127,7 +127,7 @@ Session giúp giải quyết vấn đề phân biện giữa các trình duyệt
 Phân biệt session với cookie:
 
 <|                 Session                          |                    Cookie                  |
-|--------------------------------------------------|--------------------------------------------|
+| :-------------------------------------------------- | :-------------------------------------------- |
 |- Được lưu trữ ở server                           |-Được lưu trữ trên trình duyệt (máy tính)   |
 |- Khi đã đăng nhập vào một trang web và mở tab    |-Còn với cookie thì chỉ cần đăng nhập một |
 |mới trên trình duyệt thì không cần đăng nhập      |lần và dùng cookie lưu thông tin đăng nhập |
