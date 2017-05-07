@@ -200,6 +200,7 @@ libraryDependencies ++= Seq(
     cache,
     ws,
     "org.scalatestplus.play" %% "scalatestplus-play" % "1.5.1" % Test
+    #Khai báo thư viện pg:
     "postgresql" % "postgresql" % "9.1-902.jdbc4"
 )
 
@@ -213,16 +214,13 @@ resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
 */public*: Chứa file về  images , css, javascript.
 
 
-**Kêt nối với database**
+**Kết nối với database**
 - Define những thư viện cần dùng trong built.sbt
-- Define những thông số kết nối trong application.conf
-- Nếu bạn chưa
 ```sh
-khai báo thư viện JDBC:
+khai báo thư viện JDBC(nếu chưa có):
 libraryDependencies += jdbc
-Khai báo thư viện pg:
-
 ```
+- Define những thông số kết nối trong application.conf
 ```sh
 # Default database configuration using PostgreSQL database engine
 db.default.url="postgres://localhost:root@secret/testdb"
