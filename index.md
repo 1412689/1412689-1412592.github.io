@@ -1,4 +1,4 @@
-# ĐỀ TÀI TÌM HIỂU Backend - Play(Scala)
+# Backend - Play(Scala)
 
 
 ## Sơ lược công nghệ hiện nay về Backend
