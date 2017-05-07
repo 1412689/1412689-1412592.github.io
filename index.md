@@ -2,7 +2,7 @@
 
 ## Thông tin nhóm
 
-**|   MSSV  |        Họ Tên      | Nội Dung Đóng Góp | Đánh Giá |**
+|   MSSV  |        Họ Tên      | Nội Dung Đóng Góp | Đánh Giá |
 | :--------- | :-------------------- | :------------------- | :---------- |
 | 1412689 | Hoàng Thị Bích Vân |                   |          |
 | 1412592 | Võ Hiếu Trung      |                   |          |
@@ -125,7 +125,7 @@ Session giúp giải quyết vấn đề phân biện giữa các trình duyệt
 
 Phân biệt session với cookie:
 
-**|                 Session                          |                    Cookie                  |**
+|                 Session                          |                    Cookie                  |
 | :-------------------------------------------------- | :-------------------------------------------- |
 |- Được lưu trữ ở server                           |-Được lưu trữ trên trình duyệt (máy tính)   |
 |- Khi đã đăng nhập vào một trang web và mở tab mới trên trình duyệt thì không cần đăng nhập lại lần nữa, phiên làm việc sẽ kết thúc khi ta tắt trình duyệt đi. Và khi mở trình duyệt lên lại vào lại web đó thì ta lại phải đăng nhập lại.|- Còn với cookie thì chỉ cần đăng nhập một lần và dùng cookie lưu thông tin đăng nhập thì lần sau bạn bạn mở trang web đó nó sẽ tự động đăng nhập mà mình không cần thao tác đăng nhập lại.|
@@ -134,3 +134,29 @@ Phân biệt session với cookie:
 Việc lựa chọn sử dụng session hay cookie phụ thuộc vào lập trình viên.
 
 ## Giới thiệu về play(scala)
+###Scala:
+Là một dạng ngôn ngữ hàm, kết thừa toàn bộ những gì đã có ở java. Có thể dùng toàn bộ những API của java trong app Scala
+###Play framework:
+- là một framework cho built một web app với java hoặc Scala
+- Có kiến trúc theo mô hình MVC
+- Tương tự với JSF hay JEE, Play định nghĩa ra một số biến đặc biệt:
+<ul>
+  <li>controllers : Quản lý tất cả các object thuộc về namespace (package) Controller</li>
+  <li>views : Quản lý tất cả các object thuộc về namespace (package) View</li>
+  <li>models : Quản lý tất cả các object thuộc về namespace (package) Model</li>
+  <li>routes : Quản lý các path trong việc định nghĩa URL</li>
+  <li>request (play.api.mvc.Http) quản lý các request từ client lên server (lấy ra các params từ client gửi lên) => Tương tự việc ta lấy params trong Rails </li>
+</ul>
+
+**Những loại database play có thể kết nối**
+- MySQL
+- DB2
+- Derby
+- HSQLDB
+- MS SQL
+- Oracle
+- PostgreSQL
+...
+
+**/conf/application.conf**: Thư mục này là nơi để bạn define toàn bộ conf của mình như kết nối database, akka...
+**/conf/routes**: Đây sẽ là nơi bạn define toàn bộ URI và match với action của hệ thống.
