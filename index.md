@@ -1,11 +1,5 @@
 # ĐỀ TÀI TÌM HIỂU Backend - Play(Scala)
 
-## Thông tin nhóm
-
-|   MSSV  |        Họ Tên      | Nội Dung Đóng Góp | Đánh Giá |
-| :--------- | :-------------------- | :------------------- | :---------- |
-| 1412689 | Hoàng Thị Bích Vân |                   |          |
-| 1412592 | Võ Hiếu Trung      |                   |          |
 
 ## Sơ lược công nghệ hiện nay về Backend
 ### Kiến trúc MVC – Model-View-Controller
@@ -134,11 +128,12 @@ Phân biệt session với cookie:
 Việc lựa chọn sử dụng session hay cookie phụ thuộc vào lập trình viên.
 
 ## Giới thiệu về play(scala)
-###Scala:
-Là một dạng ngôn ngữ hàm, kết thừa toàn bộ những gì đã có ở java. Có thể dùng toàn bộ những API của java trong app Scala
-###Play framework:
-- là một framework cho built một web app với java hoặc Scala
-- Có kiến trúc theo mô hình MVC
+### Scala:
+- Là một dạng ngôn ngữ hàm, kết thừa toàn bộ những gì đã có ở java. Có thể dùng toàn bộ những API của java trong app Scala.
+
+### Play framework:
+- là một framework cho built một web app với java hoặc Scala.
+- Có kiến trúc theo mô hình MVC.
 - Tương tự với JSF hay JEE, Play định nghĩa ra một số biến đặc biệt:
 <ul>
   <li>controllers : Quản lý tất cả các object thuộc về namespace (package) Controller</li>
@@ -157,6 +152,64 @@ Là một dạng ngôn ngữ hàm, kết thừa toàn bộ những gì đã có 
 - Oracle
 - PostgreSQL
 ...
+**Bắt đầu với play framework**
+- Trên môi trường windows ta cần cài đặt: scala, sbt, activator
+*Sử dụng command line run Activator để tạo project play framework*
+Để tạo một project rỗng bạn vào thư mục muốn đặt project nhấn chuột phải --> chọn Git bash --> dùng câu lệnh
+```sh
+activator new
+```
+Sau đó sẽ có những lựa chọn sẽ hiện ra như Sau
+```sh
+Choose from these featured templates or enter a template name:
+  1) minimal-akka-java-seed
+  2) minimal-akka-scala-seed
+  3) minimal-java
+  4) minimal-scala
+  5) play-java
+  6) play-scala
+```
+Bạn chọn 6 enter và và bạn đặt "tên project" --> cd "tên project" để vào project
+Để chạy project bạn dùng lệnh
+```sh
+acvivator run
+```
 
-**/conf/application.conf**: Thư mục này là nơi để bạn define toàn bộ conf của mình như kết nối database, akka...
-**/conf/routes**: Đây sẽ là nơi bạn define toàn bộ URI và match với action của hệ thống.
+*Sử dụng template name để tạo project*
+Play framework cung cấp cho người dùng rất nhiều template như những ví dụ và một số source code mẫu để mọi người tham khảo và dựa vào đó triển khai ý tưởng của mình lên thành một project của bản thân
+Câu lệnh bắt đầu như sau
+```sh
+activator new PROJECT_NAME TEMPLATE_NAME
+```
+Định nghĩa: PROJECT_NAME là tên mà bạn muốn đặt cho project đó, TEMPLATE_NAME là tên của một template mẫu mà bạn có thể tìm kiếm ở đây [template activator](https://www.lightbend.com/activator/templates)
+Run project cũng tương tự như những câu lệnh ở trên
+**Cấu trúc thư mục trong Play framework**
+*/built.sbt*: Là file định nghĩa toàn bộ thư viện trong project, nằm ở thư mục root
+Mặc định của file built.sbt như sau:
+```sh
+name := """Tên project khi mới khởi tạo"""
+
+version := "1.0-SNAPSHOT"
+
+lazy val root = (project in file(".")).enablePlugins(PlayScala)
+
+scalaVersion := "2.11.7"
+
+libraryDependencies ++= Seq(
+    jdbc,
+    cache,
+    ws,
+    "org.scalatestplus.play" %% "scalatestplus-play" % "1.5.1" % Test
+)
+
+resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
+```
+
+
+*/conf/application.conf*: là nơi để bạn define toàn bộ conf của mình như kết nối database, akka...
+*/conf/routes*: là nơi bạn define toàn bộ URI và match với action của hệ thống.
+*/app*: là nơi chứa toàn bộ các file về application như controller , view ... vv.
+*/public*: Chứa file về  images , css, javascript.
+
+
+**Kêt nối với database**
